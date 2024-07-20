@@ -1,0 +1,63 @@
+Overview
+The Library Management System is designed to manage a collection of books. It allows users to perform operations such as adding books, removing books, searching for books by title, displaying all books, saving the library to a file, and loading the library from a file. The system is implemented in Java with three main classes:
+
+Book: Represents a book with its attributes.
+Library: Manages a collection of Book objects and provides functionality to interact with the library.
+Main: Provides the user interface and handles user interactions.
+Detailed Breakdown
+
+1. Book Class
+The Book class represents a book with the following attributes:
+
+-title: The title of the book.
+-author: The author of the book.
+-isbn: The International Standard Book Number, a unique identifier for the book.
+-genre: The genre or category of the book.
+Key Points:
+
+=>Serializable Interface: Implements Serializable to allow Book objects to be saved to and loaded from a file.
+Constructor: Initializes a Book object with the provided title, author, ISBN, and genre.
+=>Getters: Methods like getTitle(), getAuthor(), etc., provide access to the book's attributes.
+toString() Method: Returns a string representation of the book, which is useful for displaying book details.
+
+2. Library Class
+The Library class manages a collection of Book objects using a HashMap where the key is the ISBN of the book and the value is the Book object itself.
+
+Key Points:
+
+=>Data Structure: Uses HashMap<String, Book> to store books by their ISBN.
+=>Add Book: addBook(Book book) method adds a book to the collection.
+=>Remove Book: removeBook(String isbn) method removes a book using its ISBN.
+=>Search by Title: searchByTitle(String title) method searches for a book by its title.
+=>Get All Books: getAllBooks() method returns a sorted list of all books.
+=>Save Library: saveLibrary(String filename) method serializes the collection and saves it to a file.
+=>Load Library: loadLibrary(String filename) method deserializes the collection from a file.
+
+3. Main Class
+The Main class provides the user interface and handles interactions with the user. It uses a Scanner to read user input and perform actions based on the user's choice.
+
+Key Points:
+
+=>User Interface: Displays a menu and processes user input.
+=>Operations:
+*Add a Book: Prompts the user for book details and adds the book to the library.
+*Remove a Book: Prompts for the ISBN and removes the book from the library.
+*Search for a Book by Title: Searches for a book by its title and displays the result.
+*Display All Books: Displays all books in the library, sorted by title.
+*Save Library to File: Saves the current state of the library to a file.
+*Load Library from File: Loads the state of the library from a file.
+*Exit: Exits the program.
+
+
+Summary of the System
+
+Book Class: Models individual books with attributes and methods.
+Library Class: Manages a collection of Book objects and provides methods to add, remove, search, list, save, and load books.
+Main Class: Interacts with the user, invoking Library methods based on user input and handling file operations.
+This design ensures that the library management system is modular and organized, making it easy to maintain and extend. You can add more features or extend functionality by modifying or adding new classes and methods as needed.
+
+
+
+
+
+
