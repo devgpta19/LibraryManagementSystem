@@ -1,0 +1,30 @@
+1. Compile the Classes :
+First, you need to compile the Java files to generate the corresponding bytecode files. Open your terminal or command prompt and navigate to the directory where your .java files are located. 
+Then run: `javac Book.java Library.java Main.java`
+This command compiles the Java files and creates `.class` files for each of them.
+
+2. Run the Program
+Once the compilation is successful, you can run the Main class which contains the main method.
+Use the following command: `java Main`
+
+3. Interact with the Program
+The menu should look like this:
+Library Management System
+1. Add a Book
+2. Remove a Book
+3. Search for a Book by Title
+4. Display All Books
+5. Save Library to File
+6. Load Library from File
+7. Exit
+
+You can choose options to add, remove, search, display, save, or load books from the library. Here's what you can do for each option:
+
+1. Add a Book: Input the title, author, ISBN, and genre of the book to add it to the library.
+2. Remove a Book: Input the ISBN of the book you want to remove.
+3. Search for a Book by Title: Input the title of the book to search for it in the library.
+4. Display All Books: View a list of all books in the library, sorted by title.
+5. Save Library to File: Save the current library data to a file. Enter the filename when prompted.
+6. Load Library from File: Load library data from a file. Enter the filename when prompted.
+7. Exit: Exit the program.
+
