@@ -1,0 +1,25 @@
+Detailed Breakdown of the Main Function (Main Class)
+The Main class acts as the entry point of the application, providing a menu-driven interface to interact with the library system. Here's how it works in detail:
+
+=>Setup:
+
+The main method creates an instance of the Library class and a Scanner for reading user input.
+A loop (while (!exit)) runs continuously until the user chooses to exit.
+
+=>Menu Display:
+The menu is displayed to the user with options to perform various operations (add, remove, search, display, save, load, exit).
+
+=>User Input:
+The program waits for the user to choose an option and reads the input.
+=>Switch Case:
+-A switch statement handles the user's choice:
+-Add a Book: Prompts the user for book details and adds the book to the library.
+-Remove a Book: Prompts the user for the ISBN of the book to remove.
+-Search for a Book by Title: Prompts the user for the book title to search.
+-Display All Books: Retrieves and displays all books in the library.
+-Save Library to File: Prompts the user for a filename and saves the library data to that file.
+-Load Library from File: Prompts the user for a filename and loads the library data from that file.
+-Exit: Sets the exit flag to true to terminate the loop and end the program.
+
+=>Error Handling:
+The program includes error handling for file operations, catching IOException and ClassNotFoundException during save and load operations.

@@ -1,0 +1,28 @@
+Here's a scenario to illustrate how the system works:
+
+Adding Books:
+
+-User selects "1. Add a Book".
+-Enters details for a new book: title, author, ISBN, genre.
+-The book is added to the library.
+
+Searching for a Book:
+
+-User selects "3. Search for a Book by Title".
+-Enters the title of the book to search.
+-The system displays the book details if found, otherwise informs the user that the book is not found.
+-Displaying All Books:
+
+User selects "4. Display All Books".
+-The system displays a list of all books sorted by title.
+Saving the Library:
+
+-User selects "5. Save Library to File".
+-Enters a filename to save the library data.
+-The library data is saved to the specified file.
+
+Loading the Library:
+
+-User selects "6. Load Library from File".
+-Enters a filename to load the library data.
+-The library data is loaded from the specified file.
